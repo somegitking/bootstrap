@@ -19,7 +19,7 @@
 
 
     var xhr = new XMLHttpRequest();
-    var url = 'http://openapi.airport.kr/openapi/service/StatusOfPassengerFlightsDS/getPassengerArrivalsDS'; /*URL*/
+    var url = 'https://openapi.airport.kr/openapi/service/StatusOfPassengerFlightsDS/getPassengerArrivalsDS'; /*URL*/
     var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'orVXfLEx73kC3FGXWsH0XyBXlbPt%2BndeiXKG9zdvr930mpj4O7Xwgf5sR%2BwJJSA6FJrV4I0KxQqopRpCnmpwfA%3D%3D'; /*Service Key*/
     queryParams += '&' + encodeURIComponent('airport_code') + '=' + encodeURIComponent('NRT'); /**/
     xhr.open('GET', url + queryParams);
@@ -30,7 +30,6 @@
     };
 
     xhr.send('');
-
 
 
 
